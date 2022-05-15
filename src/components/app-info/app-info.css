@@ -3,5 +3,20 @@
     background-color: rgb(65, 95, 60);
     border-radius: 4px;
     box-shadow: 15px 15px 30px rgba(0, 0, 0, .15);
-    color: rgb(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+}
+.app-info h1 {
+    font-size: 35px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.946);
+
+}
+
+.app-info hr {
+    background-color: rgba(226, 221, 221, 0.8);
+    margin-bottom: 35px;
+}
+
+.app-info h2 {
+    font-size: 28px;
 }

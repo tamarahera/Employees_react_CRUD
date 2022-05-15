@@ -6,17 +6,17 @@ const AppFilter = () => {
             <button     
                 className="btn btn-light"
                 type="button">
-                    Все сотрудники
+                    All employees
             </button>
             <button     
                 className="btn btn-outline-light"
                 type="button">
-                    На повышение
+                    For promotion
             </button>
             <button     
                 className="btn btn-outline-light"
                 type="button">
-                    З/П больше $1000
+                    Salary over $1000
             </button>
         </div>
     );
