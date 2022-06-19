@@ -36,12 +36,14 @@ class EmployeesAddForm extends Component {
                         className="form-control new-post-label"
                         placeholder="An employee name"
                         name="name"
+                        required
                         value={name}
                         onChange={this.onValueChange}/>
                     <input type="number"
                         className="form-control new-post-label"
                         placeholder="Salary in $"
                         name="salary"
+                        required
                         value={salary}
                         onChange={this.onValueChange}/>
     
