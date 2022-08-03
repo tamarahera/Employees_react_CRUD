@@ -23,6 +23,17 @@ class App extends Component {
         this.maxId = 4
     }
 
+    onChangeSalary = (id, value) => {
+        this.setState(({data}) => ({
+            data: data.map(item => {
+                if (item.id === id) {
+                    return {...item, salary: value.replace(/\D/g, '')}
+                }
+                return item;
+            })
+        }))
+    }
+
     deleteItem = (id) => {
         this.setState(({data}) => {
             /* const index = data.findIndex(elem => elem.id === id); */
@@ -135,7 +146,8 @@ class App extends Component {
     
                 <EmployeesList data={visibleData}
                                onDelete={this.deleteItem}
-                               onToggleProp={this.onToggleProp}/>
+                               onToggleProp={this.onToggleProp}
+                               onChangeSalary={this.onChangeSalary}/>
                 <EmployeesAddForm onAdd={this.addItem}/>
     
             </div>
